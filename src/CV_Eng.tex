@@ -1,0 +1,132 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+
+\usepackage{relsize}
+\usepackage{xcolor}
+\usepackage[a4paper,margin=1in]{geometry}
+
+\newcommand{\Csharp}{
+  {\settoheight{\dimen0}{C}C\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\#}}}}
+\newcommand\Cpp{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
+
+\firstname{Danil}
+\familyname{Neverov}
+\address{Saint Petersburg, Russia}{Leni Golikova st.}
+\mobile{+7~(921)~903~96~86}
+\email{danil.nev@gmail.com}
+\photo[90pt]{../img/2.png}
+
+%\extrainfo{%
+%\httplink{www.linkedin.com/pub/danil-neverov/66/670/375/en}}
+
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2008--2013}{Saint Petersburg State University}{\newline Faculty of Applied Mathematics and Control Processes}{\newline Specialist degree in  Applied Mathematics and Computer Science}{ \newline Department of Computer Modeling and Multiprocessor Systems}{GPA 4.8 Diploma with distinction}
+\cventry{2005--2008}{Academic Gymnasium of St. Petersburg State University}{}{}{}{}
+
+
+\section{Thesis}
+\cvitem{Title}{\emph{Stochastic optimal control approach to machine learning}}
+\cvitem{Supervisor}{D.Sc., Professor S. N. Andrianov}
+\cvitem{Description}{\small The specific algorithm of reinforcement machine learning has been developed using methods of stochastic optimal control theory and functional integrals. Algorithm has been tested on both emulated virtual dynamic system and real robotic system.}
+
+\section{Skills}
+\cvitem{Programming Languages and Tools}
+{
+  Professional practice: \newline
+  \textbf{\Cpp, Python, Git, CMake} basic knowlage of \textbf{G-Code} and \textbf{CAD/CAM} Soft;
+  \newline
+  Hobby and Scientific practice: \newline
+  \textbf{PyTorch, TensorFlow, OpenCV, Matlab, Processing (Arduino)};
+}
+\cvitem{OS}{Linux, Windows}
+\cvitem{Other}
+{
+  Large arsenal of numerical and analytical methods of applied mathematics, experience and skills of solving complex problems. Experience in industrial programming. The ability to design and construct real compound systems.
+}
+
+\section{Languages}
+\cvitem{English}{Full Professional working proficiency. FCE certificate: CEFR C1 level.
+}
+\cvitem{Russian}{Native.}
+
+
+\newpage
+
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{2018--Present}
+{Tech Lead of Robot Control}
+{\newline ARRIVAL Robotics}
+{\newline Saint Petersburg, Russia / London, UK}
+{}{Development of the industrial robot control software.\newline{}
+\begin{itemize}
+\item Leading a small team of software developers and mathematicians. The main product of the
+      company is the software platform for the flexible fully autonomous robotic assembly line. Our team's main product is a custom robot motion execution system that uses realtime feedback from force sensors and CV to perform flexible atomic robotic operations. My work is to:
+      \begin{itemize}
+        \item design and implement various feedback controllers and robot motion features
+        \item develop the architecture and components of the realtime Linux-based driver software that wrap those features and communicate with the hardware
+        \item analyze data from sensors and metrological systems
+        \item manage tasks for the team, communicate with other teams, higher management and external partners (universities, contractors, etc), present for the internal demos, investors, universities, etc
+      \end{itemize}
+      \href{https://www.tra.ai}
+      {Information: \underline{\emph{\textcolor[rgb]{0.00,0.00,0.50}{tra.ai}}}}
+\end{itemize}}
+
+\vspace{20 pt}
+
+\cventry{2013--2018}
+{Software Developer - Mathematician}
+{\newline CIMCO Software}
+{\newline Saint Petersburg, Russia / Copenhagen, Denmark}
+{}{Development of mathematical core for CAD/CAM software.\newline{}
+\begin{itemize}
+\item Worked on the large new project of NC machine toolpath generation software.
+      I have implemented several 3-axis milling machining strategies, including 
+      some unique cutting edge strategies that didn't exist before. My work consisted of designing complex computational geometry algorithms to handle and process 3d objects and
+      then implementing these algorithms into the library using c++ .\newline
+      \href{http://www.mastercam.dk/hsm-performance-pack/product/machining-strategies}
+      {Information: \underline{\emph{\textcolor[rgb]{0.00,0.00,0.50}{mastercam.dk/hsm-performance-pack/product/machining-strategies}}}}
+\item Supported and expanded the functionality of 2D CAD editor. Developed the geometric 
+      library for working with 2D primitives.\newline
+      \href{http://www.cimco.com/software/cimco-cnc-calc}
+      {Information: \underline{\emph{\textcolor[rgb]{0.00,0.00,0.50}{cimco.com/software/cimco-cnc-calc}}}}
+\end{itemize}}
+
+\vspace{20 pt}
+
+\cventry{2018}
+{Pet project}
+{\newline MiniFlow}
+{}
+{\newline \href{https://github.com/SayHey/MiniFlow}
+               {GitHub of the project : \underline{\emph{\textcolor[rgb]{0.00,0.00,0.50}{github.com/sayhey/miniflow}}}}}
+{The goal of this personal self-educational project is to create a dataflow framework for working with computational graphs, designing and training of neural networks, similar to simplified TensorFlow framework from google. Written on \Cpp17. Planning to port tensor math library to CUDA in the near future.}
+
+\newpage
+
+
+\section{Academic competitions and Additional education}
+\cvlistitem{A repeated winner and participant of local and state-level mathematical and physical competitions among students, competitor of the Young Physicists Tournament;}
+\cvlistitem{An active user of online educational resources. Graduated Deep Learning
+Nanodegree and Self-Driving Car Engineer Nanodegree on Udacity. Graduated Deep Learning Specialization on Coursera. Took several tens of other courses;}
+\cvlistitem{A student of Data Mining Track education programm by \href{http://www.dmlabs.org/}{Data Mining Labs}. Took part in several hackathons and \href{https://www.kaggle.com/}{Kaggle} competitions;}
+\cvlistitem{A participant of the seminar on calculational aspects of higher nervous activity of SPBSU, A participant of the summer school "White Nights of Computational Neuroscience";}
+\cvlistitem{A participant of the seminar on calculational and differential geometry, topology and mathematical physics of St.Petersburg Department of Steklov Institute of Mathematics, Russian Academy of Sciences;}
+
+\section{Projects}
+\cvlistitem{I am an active enthusiast of DIY (Do it yourself) culture, robotics, Arduino and other microprocessor platforms. I have launched several projects such as two flying robot-copters (a large tricopter and a micro quadcopter), Led cub etc.;}
+\cvlistitem{Machine Learning and Data Science in general and Deep Learning particularly are of a great interest for me. I implemented a lot of minor projects from standard image classifiers to such projects as end-to-end convolutional deep learning agent for self driving car, deep reinforcement learning agent for quadcopter control, GAN face generation, recurrent network text generator, time series regression based on LSTM;}
+\cvlistitem{Within the framework of my thesis project the special algorithm of reinforcement machine learning has been developed using very sophisticated methods of theoretical physics. Algorithm is currently being tested on the robots, mentioned above;}
+\cvlistitem{An interest in quantum computers had lead to successfully realized project of mathematical synthesis of optimal control of quantum register model using complicated mathematical apparatus of control theory on Lie groups;}
+\cvlistitem{In collaboration with students from department of biology I was engaged in the project of biological neural network activity modeling covering mathematical and technical aspects.}
+
+
+\section{Fields of Scientific and Professional Interests}
+\cvlistitem{Computational and Differential geometry; Bioinformatics; Machine Learning; Robotics; Artificial Intelligence; Neurosciences; Quantum Computing; Mathematical modeling of complex systems (including economic and financial systems, physical systems, human brain).}
+
+\end{document}
