@@ -69,9 +69,18 @@ Saint Petersburg, Russia
 \raggedright
 \begin{enumerate}[align = left, labelwidth = 4em, leftmargin = \dimexpr\labelwidth + \labelsep\relax]
 	\item [\textcolor{ColorOne}{$\bullet \bullet \bullet \, \bullet $}] \CC, Applied Math
-	\item [\textcolor{ColorOne}{$\bullet \bullet \bullet \, \circ $}] Linux, CMake, Git, CI/CD, Team Management
+	\item [\textcolor{ColorOne}{$\bullet \bullet \bullet \, \circ $}] Linux, CI/CD, \\Team Management
 	\item [\textcolor{ColorOne}{$\bullet \bullet \circ \, \circ $}] Python, Matlab
 	\item [\textcolor{ColorOne}{$\bullet \circ \circ \, \circ $}] CAM/G-Code, \\CAD Modeling, \\PLC Programming
+\end{enumerate}
+\vfill
+
+% Languages----------------------------------------------------------------------------------------------------
+\section*{Languages}
+\raggedright
+\begin{enumerate}[align = left, labelwidth = 4em, leftmargin = \dimexpr\labelwidth + \labelsep\relax]
+	\item [\textcolor{ColorOne}{$\bullet \bullet \bullet \, \bullet $}] Russian (native)
+	\item [\textcolor{ColorOne}{$\bullet \bullet \bullet \, \circ $}] English \\(FCE: CEFR C1 level)
 \end{enumerate}
 \vfill
 
@@ -89,7 +98,7 @@ Specialist degree in Applied Mathematics and Computer Science\\
 
 	
 % Update time
-\vspace{240 pt}
+\vspace{140 pt}
 \centering \small
 \textcolor{ColorOne}{Last updated: \monthname,~\the\year.}
 
@@ -102,7 +111,7 @@ Specialist degree in Applied Mathematics and Computer Science\\
 % Vertical rule------------------------------------------------------------------------------------------------
 \hfill
 \begin{adjustbox}{valign=t}
-\begin{minipage}{0.05\textwidth} % width
+\begin{minipage}{0.02\textwidth} % width
 \textcolor{ColorOne}{\rule{1pt}{\textheight}}
 \end{minipage}
 \end{adjustbox}
@@ -112,7 +121,7 @@ Specialist degree in Applied Mathematics and Computer Science\\
 % Right column begin
 %--------------------------------------------------------------------------------------------------------------
 \begin{adjustbox}{valign=t}
-\begin{minipage}{0.6\textwidth} % width
+\begin{minipage}{0.61\textwidth} % width
 
 % Professional Experience Section------------------------------------------------------------------------------
 \section*{Professional Experience}
@@ -121,23 +130,24 @@ Specialist degree in Applied Mathematics and Computer Science\\
 \emph{\textbf{Tech Lead of Robot Driver team}} at \textbf{ARRIVAL}\\
 London, UK / Saint Petersburg, Russia\\
 \vspace{10 pt}
-The main focus of our department was the software platform for the flexible fully autonomous robotic factory.
-I started as a developer and later became a team lead of 7 developers. We covered a hardware interaction layer 
-of this platform. That includes polymorphic vendor- agnostic hardware communication, as well as custom real-time
-feedback controllers for specific robotic operations, which involved CV feedback, force feedback and direct 
-torque/current control of robot motors. We called it Robot Driver. It runs on edge devices with Linux Preempt RT.
-My responsibilities included:
+Worked on the software platform for a flexible fully autonomous robotic assembly cell 
+(\href{https://www.youtube.com/watch?v=fZ6QwM2CYK8}{\underline{promo video}}).
+I started as a developer and later became a team lead of 7 developers. Our team covered a hardware interaction layer 
+of this platform. My responsibilities included:
 \begin{itemize}[noitemsep]
-	\item Designing and implementing various feedback controllers and robot motion features on modern \CC 
-	(up to \CC20);
-	\item Developing the architecture for a realtime Linux-based software that wraps these features as well as 
-	hardware communication and higher level MES communication into a single product;
-	\item Analyzing data from sensors and metrological systems;
+	\item Designing and implementing custom real-time feedback controllers for specific robotic operations, which 
+		involved CV feedback, force feedback, direct torque/current control of robot motors, etc;
+	\item Implementing polymorphic vendor-agnostic hardware communication abstractions, which involved dealing with
+		various industrial protocols such as PowerLink, OPC UA, Ethernet I/P and various application layer 
+		protocols such as Kuka RSI, UR RTDE, ABB EGM, etc;
+	\item Developing the architecture to wrap the above components into a single realtime Linux-based application;
 	\item Managing tasks for the team, enforcing good software practices, maintaining the long term product vision
-	and roadmap;
+		and roadmap;
 	\item Communicating with other teams, higher management and external partners (contractors, universities, etc),
-	presenting for the internal and external demos (investors, universities, etc.).
+		presenting for the internal and external demos (investors, universities, etc.).
 \end{itemize}
+Technology stack: 
+\emph{\CC 20, Linux Preempt RT, GCC, CMake, Git, Gitlab, Jenkins, Ansible, Docker, Kubernetes, Python, Matlab, Jira, Confluense}\\
 Information: \href{https://arrival.com}{\underline{arrival.com}}
 \vspace{10 pt}
 	
@@ -146,19 +156,19 @@ Information: \href{https://arrival.com}{\underline{arrival.com}}
 Copenhagen, Denmark / Saint Petersburg, Russia\\
 \vspace{10 pt}
 Developed a mathematical core for CAD/CAM software:
-\begin{itemize}
-	\item Worked on the new project of CNC toolpath generation software. My work consisted of designing complex 
-		computational geometry algorithms and implementing them using \CC. I have done several 3-axis milling 
+\begin{itemize}[noitemsep]
+	\item Mainly worked on the new CNC toolpath generation library. Implemented several 3-axis milling 
 		strategies, including some unique cutting edge strategies that didn't exist before. \\
 		Information: 
 		\href{https://www.mastercam.dk/hsm-performance-pack/product/machining-strategies}
-		{\underline{mastercam.dk/hsm-performance-pack/}}
-	\item Supported and expanded the functionality of 2D CAD editor. Developed a geometric 
-		library for working with 2D primitives.\\
+		{\underline{mastercam.dk}}
+	\item Extended a geometric library for working with 2D primitives for 2D CAD editor.\\
 		Information: 
 		\href{https://www.cimco.com/software/cimco-cnc-calc}
-		{\underline{cimco.com/software/cimco-cnc-calc}}
+		{\underline{cimco.com}}
 \end{itemize}
+Technology stack: 
+\emph{\CC, Windows, Visual Studio}\\
 
 % Personal Section---------------------------------------------------------------------------------------------
 \section*{Personal}
@@ -166,7 +176,7 @@ Developed a mathematical core for CAD/CAM software:
 	\item I am an active enthusiast of DIY culture. I assembled and programmed two quadcopters out of hobby parts 
 		and Arduino.
 	\item I occasionally participate in various hackatons and competitions such as TrackML. Back in school and 
-		university I won several local and state math and physical competitions among students.
+		university I won several local and state-level math and physics competitions among students.
 	\item I am always eager to learn more so I am an active user of various online educational resources as well 
 		as offline seminars and meetings. I also occasionally participate in such events as a speaker.
 	\item My scientific and professional areas of interest, in which I did my personal projects and 
